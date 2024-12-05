@@ -89,7 +89,13 @@ app.post("/create-payment-intent", async (req, res) => {
     });
 });
 
+app.post('/get-split-payment-intent', async (req, res) => {
+    console.log(req.body)
+
+    res.json({message: "ok"})
+})
+
 
 app.listen(3003, () => {
-    console.log('Server is listening on port 3002');
+    console.log('Server is listening on port 3003');
 });
